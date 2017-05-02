@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Bootstrap Time</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  </head>
+  <body>
+    <h1>FATTEST Panda Voting App</h1>
+    <h4>Simple page to vote for Pandas</h4>
+    <!-- <img src="http://goo.gl/2WCcjI" height=20%/>
+    count: 0
+    <button>me!</button>
+    <img src="https://pbs.twimg.com/profile_images/378800000864586872/XQrgAfpK_400x400.jpeg" height=20%/>
+    count: 0
+    <button>me!</button>
+    <br>
+
+    <img src="http://vignette1.wikia.nocookie.net/glee/images/2/29/Fat_panda_normal.jpg/revision/latest?cb=20110520221552" height=20%/>
+    count: 0
+    <button>me!</button>
+    <img src="http://orig09.deviantart.net/0ac1/f/2010/142/0/1/fat_panda_by_shabamz__heart__by_thelittlegom.png" height=20%/>
+    count: 0
+    <button>me!</button>
+    <br> -->
+    <table>
+      <tr>
+        <td>
+          <img src="http://orig09.deviantart.net/0ac1/f/2010/142/0/1/fat_panda_by_shabamz__heart__by_thelittlegom.png" height=20%/>
+        </td>
+        <td>count: <span id="fatOneCount">0</span><br>
+            <button onclick="increaseCountFatOne()">me!</button>
+        </td>
+        <td>
+          <img src="http://orig09.deviantart.net/0ac1/f/2010/142/0/1/fat_panda_by_shabamz__heart__by_thelittlegom.png" height=20%/>
+        </td>
+        <td>count: <span id="fatTwoCount">0</span><br>
+            <button onclick="increaseCountFatTwo()">me!</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://orig09.deviantart.net/0ac1/f/2010/142/0/1/fat_panda_by_shabamz__heart__by_thelittlegom.png" height=20%/>
+        </td>
+        <td>count: <span id="fatThreeCount">0</span><br>
+            <button onclick="increaseCountFatThree()">me!</button>
+        </td>
+        <td>
+          <img src="http://orig09.deviantart.net/0ac1/f/2010/142/0/1/fat_panda_by_shabamz__heart__by_thelittlegom.png" height=20%/>
+        </td>
+        <td>count: <span id="fatFourCount">0</span><br>
+            <button onclick="increaseCountFatFour()">me!</button>
+        </td>
+      </tr>
+
+    </table>
+    <script>
+      var fat1=0
+      var fat2=0
+      var fat3=0
+      var fat4=0
+      function increaseCountFatOne(){
+        fat1+=1
+        $("#fatOneCount").html(fat1);
+      }
+      function increaseCountFatTwo(){
+        fat2+=1
+        $("#fatTwoCount").html(fat2);
+      }
+      function increaseCountFatThree(){
+        fat3+=1
+        $("#fatThreeCount").html(fat3);
+      }
+      function increaseCountFatFour(){
+        fat4+=1
+        $("#fatFourCount").html(fat4);
+      }
+    </script>
+  </body>
+</html>

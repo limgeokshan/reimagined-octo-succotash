@@ -1,0 +1,104 @@
+
+<html>
+  <head>
+    <title>My Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Profile Page</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li id="nav-home"><a href="#" onclick="goToHome()"><i class="fa fa-home"></i>Home</a></li>
+                  <li id="nav-skills"><a href="#" onclick="goToSkills()"><i class="fa fa-briefcase"></i>Skills</a></li>
+                  <li id="nav-contact"><a href="#" onclick="goToContact()"><i class="fa fa-phone"></i>Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover" id="home">
+            <img height = "30%" src="https://goo.gl/j5iQRv" class = "img-circle" alt="">
+            <h1 class="cover-heading">Profile</h1>
+            <p class="lead">Howdy people. How is your day? How may i help you?<br>I am currently an undergrad studying in SMU</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="inner cover" id="skills">
+            <h1 class="cover-heading">Skills</h1>
+            <p class="lead">Howdy people. How is your day? How may i help you?<br>I am currently an undergrad studying in SMU</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="inner cover" id="contact">
+            <h1 class="cover-heading">Contact</h1>
+            <p class="lead">Howdy people. How is your day? How may i help you?<br>I am currently an undergrad studying in SMU</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <script>
+      $(function(){
+        $("#skills").hide();
+        $("#contact").hide();
+        $("#nav-home").attr('class','active');
+      })
+
+      function goToHome(){
+        $("#skills").hide();
+        $("#contact").hide();
+        $("#home").slideDown();
+        $("#nav-home").attr('class','active');
+        $("#nav-contact").attr('class','');
+        $("#nav-skills").attr('class','');
+      }
+
+      function goToSkills(){
+        $("#skills").slideDown();
+        $("#contact").hide();
+        $("#home").hide();
+        $("#nav-skills").attr('class','active');
+        $("#nav-contact").attr('class','');
+        $("#nav-home").attr('class','');
+      }
+      function goToContact(){
+        $("#skills").hide();
+        $("#contact").slideDown();
+        $("#home").hide();
+        $("#nav-contact").attr('class','active');
+        $("#nav-skills").attr('class','');
+        $("#nav-home").attr('class','');
+      }
+    </script>
+  </body>
+</html>
